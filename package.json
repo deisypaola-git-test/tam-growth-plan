@@ -1,0 +1,12 @@
+{
+  "name": "tam-growth-plan",
+  "version": "1.0.0",
+  "description": "TAM Senior Growth Plan Tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
