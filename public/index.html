@@ -361,7 +361,7 @@ textarea.notes-area::placeholder{color:var(--dim)}
 const PLAN = {
   promotionCriteria: [
     {id:'c1',label:'Resultados sostenidos',desc:'NPS ≥ 80 y SLAs cumplidos durante ≥ 3 meses consecutivos.'},
-    {id:'c2',label:'Liderazgo de incidentes',desc:'Lideró y documentó ≥ 5 incidentes P0/P1 con post-mortems compartidos al equipo.'},
+    {id:'c2',label:'Liderazgo de incidentes',desc:'Lideró y documentó ≥ 5 incidentes P0/P1 compartidos al equipo.'},
     {id:'c3',label:'Mejora colectiva del equipo Brasil',desc:'Todo el equipo Brasil muestra mejora medible en NPS y cumplimiento de targets bajo su monitoreo activo — los KPIs agregados del equipo (NPS, SLAs, tiempos de respuesta) mejoran respecto al baseline del mes 1.'},
     {id:'c4',label:'Comunicación ejecutiva',desc:'Condujo ≥ 2 presentaciones formales en inglés en foros cross (All Hands, GTM u otro).'},
     {id:'c5',label:'Influencia cross-funcional',desc:'Relaciones activas con Product, Engineering y KAMs que generaron ≥ 1 mejora de proceso o producto para Brasil.'},
@@ -375,15 +375,14 @@ const PLAN = {
   ],
   pillars:[
     {id:'p1',number:1,title:'Incidentes P0/P1',subtitle:'Punto de contacto en issues productivos',color:'#f43f5e',icon:'🚨',
-     baseline:'Medir % actual de incidentes P0/P1 liderados, tiempo promedio de primera respuesta y número de post-mortems documentados.',
+     baseline:'Medir % actual de incidentes P0/P1 liderados y tiempo promedio de primera respuesta.',
      phases:[
       {id:'p1-ph1',months:'Mes 1–2',title:'Mapeo y checklist',tasks:[
         {id:'p1-t1',text:'Mapear con manager cuentas prioritarias Brasil, canales de incidentes (Slack, Jira YPS) y definición oficial de P0/P1.'},
         {id:'p1-t2',text:'Crear checklist de respuesta: confirmar recepción < 2h, crear ticket YPS con toda la info, revisar dashboards (errores, conversión, volumen), definir dueños y próximo update.'},
         {id:'p1-t3',text:'Participar activamente en Daily para revisar issues abiertos del equipo Brasil.'},
       ]},
-      {id:'p1-ph2',months:'Mes 3–4',title:'Post-mortems y mentoring',tasks:[
-        {id:'p1-t4',text:'Liderar post-mortems ligeros para ≥ 2 incidentes relevantes (causa raíz, impacto, acciones correctivas y preventivas). Documentar en Confluence y compartir en Daily Tech.'},
+      {id:'p1-ph2',months:'Mes 3–4',title:'Seguimiento y mentoring',tasks:[
         {id:'p1-t5',text:'Dar al menos 1 update de incidente en inglés en Daily Tech o canal interno.'},
         {id:'p1-t6',text:'Mentorear a todo el equipo TAM de Brasil en uso de dashboards y buenas prácticas de reporte en #product-tech.'},
       ]},
@@ -392,7 +391,7 @@ const PLAN = {
         {id:'p1-t8',text:'Compartirlo en sesión de 30–45 min con el equipo Brasil (Implementation/TAM/KAM) — conducida parcialmente en inglés.'},
       ]},
      ],
-     metrics:['% incidentes P0/P1 Brasil liderados → ≥ 80%','Primera respuesta al merchant → < 2h','Nº de post-mortems documentados con acciones completadas']},
+     metrics:['% incidentes P0/P1 Brasil liderados → ≥ 80%','Primera respuesta al merchant → < 2h']},
 
     {id:'p2',number:2,title:'NPS del merchant',subtitle:'NPS > 80 en cartera',color:'#3b82f6',icon:'⭐',
      baseline:'Revisar NPS histórico por merchant, identificar top 3 fricciones recurrentes y registrar el número de arranque.',
